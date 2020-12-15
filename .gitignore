@@ -1,0 +1,14 @@
+
+*.wmf
+
+Altium/debug\.log
+
+*.old
+
+*.PrjPCBStructure
+
+Altium/__Previews/
+
+Altium/History/
+
+*.log
