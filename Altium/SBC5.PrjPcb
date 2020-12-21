@@ -71,6 +71,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HZQEQKAI
 
+[Document3]
+DocumentPath=..\IBIS models\mx7d_19x19_3p3v_ddr3_odt.ibs
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [SearchPath1]
 Path=..\*.*
 IncludeSubFolders=1
