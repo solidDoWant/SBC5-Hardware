@@ -74,23 +74,6 @@ GenerateClassCluster=0
 DocumentUniqueId=HZQEQKAI
 
 [Document3]
-DocumentPath=..\IBIS models\mx7d_19x19_3p3v_ddr3_odt.ibs
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document4]
 DocumentPath=Power input.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -107,7 +90,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VYGLXWKL
 
-[Document5]
+[Document4]
 DocumentPath=Power Conversion.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -124,7 +107,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FJXJGAND
 
-[Document6]
+[Document5]
 DocumentPath=CPU Power.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -141,7 +124,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MJXXFAJV
 
-[Document7]
+[Document6]
 DocumentPath=DDR3L.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -158,7 +141,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FBKHLRRQ
 
-[Document8]
+[Document7]
 DocumentPath=Control.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -175,7 +158,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UHFAGDVP
 
-[Document9]
+[Document8]
 DocumentPath=USB.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -192,7 +175,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PXTRTNLV
 
-[Document10]
+[Document9]
 DocumentPath=SD.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -209,7 +192,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TKQSRUUG
 
-[Document11]
+[Document10]
 DocumentPath=Ethernet.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -226,7 +209,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GXQLGRMG
 
-[Document12]
+[Document11]
 DocumentPath=MIPI.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -243,7 +226,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CSAUFUHX
 
-[Document13]
+[Document12]
 DocumentPath=I2C, SPI, UART.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -260,7 +243,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MFWZPRIQ
 
-[Document14]
+[Document13]
 DocumentPath=LCD.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -277,7 +260,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IYZFTHAQ
 
-[Document15]
+[Document14]
 DocumentPath=Unused.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1

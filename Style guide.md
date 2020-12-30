@@ -3,6 +3,7 @@
 * All parts should have the comment set as the part number.
 * All parts should have a datalink parameter set.
 * All parts should have pricing information attached.
+* Everything should be on a 100 mil grid.
 
 # Naming rules
 * Passives should have a SI prefix appended to them with correct capitalization. See [Wikipedia](https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes).
