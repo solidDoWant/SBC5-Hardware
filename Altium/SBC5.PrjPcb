@@ -74,7 +74,7 @@ GenerateClassCluster=0
 DocumentUniqueId=HZQEQKAI
 
 [Document3]
-DocumentPath=Power Input.SchDoc
+DocumentPath=Power Conversion.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -91,7 +91,7 @@ GenerateClassCluster=0
 DocumentUniqueId=VYGLXWKL
 
 [Document4]
-DocumentPath=Power Conversion.SchDoc
+DocumentPath=PMIC.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
