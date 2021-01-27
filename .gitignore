@@ -12,3 +12,5 @@ Altium/__Previews/
 Altium/History/
 
 *.log
+
+~$*.xlsx
