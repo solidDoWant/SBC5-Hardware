@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<configuration name="SBC5" version="1.4" xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.4 http://mcuxpresso.nxp.com/XSD/mex_configuration_1.4.xsd" uuid="eb2adfb4-a890-4274-8efb-02d21245df50" xmlns="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <common>
+      <processor>MCIMX7DxxVM</processor>
+      <package>MCIMX7D7DVM10SC</package>
+      <mcu_data>i_mx_1_0</mcu_data>
+      <cores selected="">
+         <core name="Cortex-A7 (Core #0)" id="ca7_0" description="ARM Cortex-A7 MPCore platform with TrustZone and NEON MPE Co-processor Core #0"/>
+         <core name="Cortex-A7 (Core #1)" id="ca7_1" description="ARM Cortex-A7 MPCore platform with TrustZone and NEON MPE Co-processor Core #1"/>
+         <core name="Cortex-M4" id="cm4" description="ARM Cortex-M4 platform Core"/>
+      </cores>
+      <description></description>
+   </common>
+   <preferences>
+      <validate_boot_init_only>true</validate_boot_init_only>
+      <generate_extended_information>false</generate_extended_information>
+   </preferences>
+   <tools>
+      <pins name="Pins" version="4.1" enabled="true" update_project_code="true">
+         <pins_profile>
+            <processor_version>3.0.0</processor_version>
+            <power_domains>
+               <power_domain name="USB_OTG1_VDDA_3P3" value="3.3"/>
+               <power_domain name="USB_OTG2_VDDA_3P3" value="3.3"/>
+               <power_domain name="USB_H_VDD_1P2" value="1.2"/>
+               <power_domain name="MIPI_VDDA_1P8" value="1.8"/>
+               <power_domain name="NVCC_ENET1" value="3.3"/>
+               <power_domain name="MIPI_VDDD_1P0" value="1.0"/>
+               <power_domain name="NVCC_DRAM" value="1.35"/>
+               <power_domain name="VDD_1P2_CAP" value="1.2"/>
+               <power_domain name="VDDA_1P8" value="1.8"/>
+               <power_domain name="VDDA_1P0_CAP" value="1.0"/>
+               <power_domain name="VDD_SNVS_1P8_CAP" value="1.8"/>
+               <power_domain name="VDDA_PHY_1P8" value="1.8"/>
+               <power_domain name="PCIE_VPH" value="1.8"/>
+               <power_domain name="PCIE_VPH_TX" value="1.8"/>
+               <power_domain name="PCIE_VPH_RX" value="1.8"/>
+               <power_domain name="VDDD_1P0_CAP" value="1.0"/>
+               <power_domain name="PCIE_VP" value="1.0"/>
+               <power_domain name="PCIE_VP_TX" value="1.0"/>
+               <power_domain name="PCIE_VP_RX" value="1.0"/>
+               <power_domain name="ADC2_VDDA_1P8" value="1.8"/>
+               <power_domain name="VDD_SNVS_IN" value="3.0"/>
+               <power_domain name="NVCC_DRAM_CKE" value="1.35"/>
+               <power_domain name="ADC1_VDDA_1P8" value="1.8"/>
+               <power_domain name="DRAM_VREF" value="0.675"/>
+               <power_domain name="VDD_TEMPSENSOR_1P8" value="1.8"/>
+            </power_domains>
+         </pins_profile>
+         <functions_list>
+            <function name="BOARD_InitPins">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>false</callFromInitBoot>
+                  <coreID>ca7_0</coreID>
+               </options>
+               <dependencies/>
+               <pins>
+                  <pin peripheral="CCM" signal="ccm_pmic_stby_req" pin_num="AC7" pin_signal="CCM_PMIC_STBY_REQ"/>
+                  <pin peripheral="CCM" signal="ccm_pmic_ready" pin_num="E10" pin_signal="SAI1_MCLK"/>
+                  <pin peripheral="ECSPI1" signal="ecspi_miso" pin_num="H4" pin_signal="ECSPI1_MISO"/>
+                  <pin peripheral="ECSPI1" signal="ecspi_mosi" pin_num="G5" pin_signal="ECSPI1_MOSI"/>
+                  <pin peripheral="ECSPI1" signal="ecspi_sclk" pin_num="H3" pin_signal="ECSPI1_SCLK"/>
+                  <pin peripheral="ENET1" signal="enet_mdc" pin_num="C3" pin_signal="SD2_WP"/>
+                  <pin peripheral="ENET1" signal="enet_mdio" pin_num="D3" pin_signal="SD2_CD_B"/>
+                  <pin peripheral="CCM" signal="ccm_enet_ref_clk, 1" pin_num="D16" pin_signal="ENET1_TX_CLK"/>
+                  <pin peripheral="ENET1" signal="enet_rx_er" pin_num="F15" pin_signal="ENET1_RXC"/>
+                  <pin peripheral="ENET1" signal="rgmii_td, 0" pin_num="F17" pin_signal="ENET1_TDATA0"/>
+                  <pin peripheral="ENET1" signal="rgmii_td, 1" pin_num="E17" pin_signal="ENET1_TDATA1"/>
+                  <pin peripheral="ENET1" signal="rgmii_rd, 0" pin_num="E14" pin_signal="ENET1_RDATA0"/>
+                  <pin peripheral="ENET1" signal="rgmii_rd, 1" pin_num="F14" pin_signal="ENET1_RDATA1"/>
+                  <pin peripheral="ENET1" signal="rgmii_tx_ctl" pin_num="E16" pin_signal="ENET1_TX_CTL"/>
+                  <pin peripheral="ENET1" signal="rgmii_rx_ctl" pin_num="E15" pin_signal="ENET1_RX_CTL"/>
+                  <pin peripheral="I2C1" signal="i2c_scl" pin_num="J2" pin_signal="I2C1_SCL"/>
+                  <pin peripheral="I2C1" signal="i2c_sda" pin_num="K1" pin_signal="I2C1_SDA"/>
+                  <pin peripheral="I2C2" signal="i2c_scl" pin_num="K2" pin_signal="I2C2_SCL"/>
+                  <pin peripheral="I2C2" signal="i2c_sda" pin_num="K3" pin_signal="I2C2_SDA"/>
+                  <pin peripheral="I2C3" signal="i2c_scl" pin_num="K5" pin_signal="I2C3_SCL"/>
+                  <pin peripheral="I2C3" signal="i2c_sda" pin_num="K6" pin_signal="I2C3_SDA"/>
+                  <pin peripheral="MIPI_CSI2" signal="mipi_csi_clk_n" pin_num="A15" pin_signal="MIPI_CSI_CLK_N"/>
+                  <pin peripheral="MIPI_CSI2" signal="mipi_csi_clk_p" pin_num="B15" pin_signal="MIPI_CSI_CLK_P"/>
+                  <pin peripheral="MIPI_CSI2" signal="mipi_csi_d0_n" pin_num="A16" pin_signal="MIPI_CSI_D0_N"/>
+                  <pin peripheral="MIPI_CSI2" signal="mipi_csi_d0_p" pin_num="B16" pin_signal="MIPI_CSI_D0_P"/>
+                  <pin peripheral="MIPI_CSI2" signal="mipi_csi_d1_n" pin_num="A14" pin_signal="MIPI_CSI_D1_N"/>
+                  <pin peripheral="MIPI_CSI2" signal="mipi_csi_d1_p" pin_num="B14" pin_signal="MIPI_CSI_D1_P"/>
+                  <pin peripheral="MIPI_DSI" signal="mipi_dsi_clk_n" pin_num="A19" pin_signal="MIPI_DSI_CLK_N"/>
+                  <pin peripheral="MIPI_DSI" signal="mipi_dsi_clk_p" pin_num="B19" pin_signal="MIPI_DSI_CLK_P"/>
+                  <pin peripheral="MIPI_DSI" signal="mipi_dsi_d0_n" pin_num="A20" pin_signal="MIPI_DSI_D0_N"/>
+                  <pin peripheral="MIPI_DSI" signal="mipi_dsi_d0_p" pin_num="B20" pin_signal="MIPI_DSI_D0_P"/>
+                  <pin peripheral="MIPI_DSI" signal="mipi_dsi_d1_n" pin_num="A18" pin_signal="MIPI_DSI_D1_N"/>
+                  <pin peripheral="MIPI_DSI" signal="mipi_dsi_d1_p" pin_num="B18" pin_signal="MIPI_DSI_D1_P"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 00" pin_num="AB19" pin_signal="DRAM_ADDR00"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 01" pin_num="AB16" pin_signal="DRAM_ADDR01"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 02" pin_num="AC18" pin_signal="DRAM_ADDR02"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 03" pin_num="AC20" pin_signal="DRAM_ADDR03"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 04" pin_num="AB21" pin_signal="DRAM_ADDR04"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 05" pin_num="Y23" pin_signal="DRAM_ADDR05"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 06" pin_num="V22" pin_signal="DRAM_ADDR06"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 07" pin_num="Y22" pin_signal="DRAM_ADDR07"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 08" pin_num="W22" pin_signal="DRAM_ADDR08"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 09" pin_num="V23" pin_signal="DRAM_ADDR09"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 10" pin_num="T23" pin_signal="DRAM_ADDR10"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 11" pin_num="U22" pin_signal="DRAM_ADDR11"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 12" pin_num="T22" pin_signal="DRAM_ADDR12"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 13" pin_num="P23" pin_signal="DRAM_ADDR13"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 14" pin_num="AB18" pin_signal="DRAM_ADDR14"/>
+                  <pin peripheral="MMDC" signal="dram_addr, 15" pin_num="AB20" pin_signal="DRAM_ADDR15"/>
+                  <pin peripheral="MMDC" signal="dram_cas_b" pin_num="AC14" pin_signal="DRAM_CAS_B"/>
+                  <pin peripheral="MMDC" signal="dram_cs0_b" pin_num="AB23" pin_signal="DRAM_CS0_B"/>
+                  <pin peripheral="MMDC" signal="dram_cs1_b" pin_num="AA22" pin_signal="DRAM_CS1_B"/>
+                  <pin peripheral="MMDC" signal="dram_data, 00" pin_num="AD22" pin_signal="DRAM_DATA00"/>
+                  <pin peripheral="MMDC" signal="dram_data, 01" pin_num="AD23" pin_signal="DRAM_DATA01"/>
+                  <pin peripheral="MMDC" signal="dram_data, 02" pin_num="AE20" pin_signal="DRAM_DATA02"/>
+                  <pin peripheral="MMDC" signal="dram_data, 03" pin_num="AE23" pin_signal="DRAM_DATA03"/>
+                  <pin peripheral="MMDC" signal="dram_data, 04" pin_num="AE22" pin_signal="DRAM_DATA04"/>
+                  <pin peripheral="MMDC" signal="dram_data, 05" pin_num="AD19" pin_signal="DRAM_DATA05"/>
+                  <pin peripheral="MMDC" signal="dram_data, 06" pin_num="AD18" pin_signal="DRAM_DATA06"/>
+                  <pin peripheral="MMDC" signal="dram_data, 07" pin_num="AE19" pin_signal="DRAM_DATA07"/>
+                  <pin peripheral="MMDC" signal="dram_data, 08" pin_num="AE14" pin_signal="DRAM_DATA08"/>
+                  <pin peripheral="MMDC" signal="dram_data, 09" pin_num="AE18" pin_signal="DRAM_DATA09"/>
+                  <pin peripheral="MMDC" signal="dram_data, 10" pin_num="AE17" pin_signal="DRAM_DATA10"/>
+                  <pin peripheral="MMDC" signal="dram_data, 11" pin_num="AD16" pin_signal="DRAM_DATA11"/>
+                  <pin peripheral="MMDC" signal="dram_data, 12" pin_num="AE16" pin_signal="DRAM_DATA12"/>
+                  <pin peripheral="MMDC" signal="dram_data, 13" pin_num="AD14" pin_signal="DRAM_DATA13"/>
+                  <pin peripheral="MMDC" signal="dram_data, 14" pin_num="AD13" pin_signal="DRAM_DATA14"/>
+                  <pin peripheral="MMDC" signal="dram_data, 15" pin_num="AE13" pin_signal="DRAM_DATA15"/>
+                  <pin peripheral="MMDC" signal="dram_data, 16" pin_num="AA25" pin_signal="DRAM_DATA16"/>
+                  <pin peripheral="MMDC" signal="dram_data, 17" pin_num="W24" pin_signal="DRAM_DATA17"/>
+                  <pin peripheral="MMDC" signal="dram_data, 18" pin_num="V25" pin_signal="DRAM_DATA18"/>
+                  <pin peripheral="MMDC" signal="dram_data, 19" pin_num="W25" pin_signal="DRAM_DATA19"/>
+                  <pin peripheral="MMDC" signal="dram_data, 20" pin_num="AC25" pin_signal="DRAM_DATA20"/>
+                  <pin peripheral="MMDC" signal="dram_data, 21" pin_num="AB25" pin_signal="DRAM_DATA21"/>
+                  <pin peripheral="MMDC" signal="dram_data, 22" pin_num="AB24" pin_signal="DRAM_DATA22"/>
+                  <pin peripheral="MMDC" signal="dram_data, 31" pin_num="V24" pin_signal="DRAM_DATA31"/>
+                  <pin peripheral="MMDC" signal="dram_data, 30" pin_num="U24" pin_signal="DRAM_DATA30"/>
+                  <pin peripheral="MMDC" signal="dram_data, 29" pin_num="R24" pin_signal="DRAM_DATA29"/>
+                  <pin peripheral="MMDC" signal="dram_data, 27" pin_num="N25" pin_signal="DRAM_DATA27"/>
+                  <pin peripheral="MMDC" signal="dram_data, 26" pin_num="P25" pin_signal="DRAM_DATA26"/>
+                  <pin peripheral="MMDC" signal="dram_data, 25" pin_num="N24" pin_signal="DRAM_DATA25"/>
+                  <pin peripheral="MMDC" signal="dram_data, 23" pin_num="AC24" pin_signal="DRAM_DATA23"/>
+                  <pin peripheral="MMDC" signal="dram_data, 28" pin_num="U25" pin_signal="DRAM_DATA28"/>
+                  <pin peripheral="MMDC" signal="dram_data, 24" pin_num="R25" pin_signal="DRAM_DATA24"/>
+                  <pin peripheral="MMDC" signal="dram_dqm, 0" pin_num="AD20" pin_signal="DRAM_DQM0"/>
+                  <pin peripheral="MMDC" signal="dram_dqm, 1" pin_num="AD17" pin_signal="DRAM_DQM1"/>
+                  <pin peripheral="MMDC" signal="dram_dqm, 2" pin_num="AA24" pin_signal="DRAM_DQM2"/>
+                  <pin peripheral="MMDC" signal="dram_dqm, 3" pin_num="P24" pin_signal="DRAM_DQM3"/>
+                  <pin peripheral="MMDC" signal="dram_odt, 0" pin_num="AC16" pin_signal="DRAM_ODT0"/>
+                  <pin peripheral="MMDC" signal="dram_odt, 1" pin_num="AA14" pin_signal="DRAM_ODT1"/>
+                  <pin peripheral="MMDC" signal="dram_ras_b" pin_num="AB15" pin_signal="DRAM_RAS_B"/>
+                  <pin peripheral="MMDC" signal="dram_reset" pin_num="AC22" pin_signal="DRAM_RESET"/>
+                  <pin peripheral="MMDC" signal="dram_sdba, 0" pin_num="R22" pin_signal="DRAM_SDBA0"/>
+                  <pin peripheral="MMDC" signal="dram_sdba, 1" pin_num="P22" pin_signal="DRAM_SDBA1"/>
+                  <pin peripheral="MMDC" signal="dram_sdba, 2" pin_num="N23" pin_signal="DRAM_SDBA2"/>
+                  <pin peripheral="MMDC" signal="dram_sdcke, 0" pin_num="AB17" pin_signal="DRAM_SDCKE0"/>
+                  <pin peripheral="MMDC" signal="dram_sdcke, 1" pin_num="AB22" pin_signal="DRAM_SDCKE1"/>
+                  <pin peripheral="MMDC" signal="dram_sdclk0_n" pin_num="AD25" pin_signal="DRAM_SDCLK0_N"/>
+                  <pin peripheral="MMDC" signal="dram_sdclk0_p" pin_num="AD24" pin_signal="DRAM_SDCLK0_P"/>
+                  <pin peripheral="MMDC" signal="dram_sdqs0_n" pin_num="AD21" pin_signal="DRAM_SDQS0_N"/>
+                  <pin peripheral="MMDC" signal="dram_sdqs0_p" pin_num="AE21" pin_signal="DRAM_SDQS0_P"/>
+                  <pin peripheral="MMDC" signal="dram_sdqs1_n" pin_num="AE15" pin_signal="DRAM_SDQS1_N"/>
+                  <pin peripheral="MMDC" signal="dram_sdqs1_p" pin_num="AD15" pin_signal="DRAM_SDQS1_P"/>
+                  <pin peripheral="MMDC" signal="dram_sdqs2_n" pin_num="Y25" pin_signal="DRAM_SDQS2_N"/>
+                  <pin peripheral="MMDC" signal="dram_sdqs2_p" pin_num="Y24" pin_signal="DRAM_SDQS2_P"/>
+                  <pin peripheral="MMDC" signal="dram_sdqs3_n" pin_num="T25" pin_signal="DRAM_SDQS3_N"/>
+                  <pin peripheral="MMDC" signal="dram_sdqs3_p" pin_num="T24" pin_signal="DRAM_SDQS3_P"/>
+                  <pin peripheral="MMDC" signal="dram_sdwe_b" pin_num="AB14" pin_signal="DRAM_SDWE_B"/>
+                  <pin peripheral="MMDC" signal="dram_vref" pin_num="AC13" pin_signal="DRAM_VREF"/>
+                  <pin peripheral="MMDC" signal="dram_zqpad" pin_num="AB13" pin_signal="DRAM_ZQPAD"/>
+                  <pin peripheral="SJC" signal="jtag_mod" pin_num="U1" pin_signal="JTAG_MOD"/>
+                  <pin peripheral="SJC" signal="jtag_tck" pin_num="U5" pin_signal="JTAG_TCK"/>
+                  <pin peripheral="SJC" signal="jtag_tdi" pin_num="U3" pin_signal="JTAG_TDI"/>
+                  <pin peripheral="SJC" signal="jtag_tdo" pin_num="U6" pin_signal="JTAG_TDO"/>
+                  <pin peripheral="SJC" signal="jtag_tms" pin_num="U4" pin_signal="JTAG_TMS"/>
+                  <pin peripheral="SJC" signal="jtag_trst_b" pin_num="U2" pin_signal="JTAG_TRST_B"/>
+                  <pin peripheral="SNVS" signal="pmic_on_req" pin_num="AB8" pin_signal="SNVS_PMIC_ON_REQ"/>
+                  <pin peripheral="SNVS" signal="test_mode" pin_num="P6" pin_signal="TEST_MODE"/>
+                  <pin peripheral="SRC" signal="src_por_b" pin_num="R6" pin_signal="POR_B"/>
+                  <pin peripheral="SRC" signal="src_boot_mode1" pin_num="P5" pin_signal="BOOT_MODE1"/>
+                  <pin peripheral="SRC" signal="src_boot_mode0" pin_num="P4" pin_signal="BOOT_MODE0"/>
+                  <pin peripheral="TEMPSENSOR" signal="rext" pin_num="AE4" pin_signal="TEMPSENSOR_REXT"/>
+                  <pin peripheral="UART1" signal="uart_tx_data" pin_num="L4" pin_signal="UART1_TXD"/>
+                  <pin peripheral="UART1" signal="uart_rx_data" pin_num="L3" pin_signal="UART1_RXD"/>
+                  <pin peripheral="UART2" signal="uart_rx_data" pin_num="L5" pin_signal="UART2_RXD"/>
+                  <pin peripheral="UART2" signal="uart_tx_data" pin_num="L6" pin_signal="UART2_TXD"/>
+                  <pin peripheral="USB" signal="usb_otg2_rext" pin_num="A11" pin_signal="USB_OTG2_REXT"/>
+                  <pin peripheral="USB" signal="usb_otg1_rext" pin_num="A7" pin_signal="USB_OTG1_REXT"/>
+                  <pin peripheral="USB" signal="usb_otg1_dn" pin_num="A8" pin_signal="USB_OTG1_DN"/>
+                  <pin peripheral="USB" signal="usb_otg1_dp" pin_num="B8" pin_signal="USB_OTG1_DP"/>
+                  <pin peripheral="USB" signal="usb_otg1_id" pin_num="B7" pin_signal="USB_OTG1_ID"/>
+                  <pin peripheral="USB" signal="usb_otg1_oc" pin_num="M1" pin_signal="UART3_RXD"/>
+                  <pin peripheral="USB" signal="usb_otg2_dn" pin_num="A10" pin_signal="USB_OTG2_DN"/>
+                  <pin peripheral="USB" signal="usb_otg2_dp" pin_num="B10" pin_signal="USB_OTG2_DP"/>
+                  <pin peripheral="USB" signal="usb_otg2_id" pin_num="B11" pin_signal="USB_OTG2_ID"/>
+                  <pin peripheral="USB" signal="usb_otg2_oc" pin_num="M5" pin_signal="UART3_RTS"/>
+                  <pin peripheral="XTALOSC" signal="onoff" pin_num="AC8" pin_signal="ONOFF"/>
+                  <pin peripheral="XTALOSC" signal="rtc_xtali" pin_num="AE6" pin_signal="RTC_XTALI"/>
+                  <pin peripheral="XTALOSC" signal="rtc_xtalo" pin_num="AD6" pin_signal="RTC_XTALO"/>
+                  <pin peripheral="XTALOSC" signal="xtali" pin_num="V1" pin_signal="XTALI"/>
+                  <pin peripheral="XTALOSC" signal="xtalo" pin_num="V2" pin_signal="XTALO"/>
+                  <pin peripheral="uSDHC1" signal="sd_clk" pin_num="B5" pin_signal="SD1_CLK"/>
+                  <pin peripheral="uSDHC1" signal="sd_cmd" pin_num="C5" pin_signal="SD1_CMD"/>
+                  <pin peripheral="uSDHC1" signal="sd_cd_b" pin_num="C6" pin_signal="SD1_CD_B"/>
+                  <pin peripheral="uSDHC1" signal="sd_data, 0" pin_num="A5" pin_signal="SD1_DATA0"/>
+                  <pin peripheral="uSDHC1" signal="sd_data, 1" pin_num="D6" pin_signal="SD1_DATA1"/>
+                  <pin peripheral="uSDHC1" signal="sd_data, 2" pin_num="A4" pin_signal="SD1_DATA2"/>
+                  <pin peripheral="uSDHC1" signal="sd_data, 3" pin_num="D5" pin_signal="SD1_DATA3"/>
+                  <pin peripheral="uSDHC1" signal="sd_vselect" pin_num="M6" pin_signal="UART3_CTS"/>
+               </pins>
+            </function>
+         </functions_list>
+      </pins>
+   </tools>
+</configuration>
