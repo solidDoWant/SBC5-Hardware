@@ -225,7 +225,7 @@ GenerateClassCluster=0
 DocumentUniqueId=CSAUFUHX
 
 [Document12]
-DocumentPath=I2C, SPI, UART.SchDoc
+DocumentPath=I2C and UART.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
