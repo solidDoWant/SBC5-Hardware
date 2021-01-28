@@ -20,12 +20,20 @@
          <pins_profile>
             <processor_version>3.0.0</processor_version>
             <power_domains>
+               <power_domain name="NVCC_SAI" value="3.3"/>
+               <power_domain name="NVCC_SD3" value="3.3"/>
+               <power_domain name="NVCC_SD1" value="3.3"/>
                <power_domain name="USB_OTG1_VDDA_3P3" value="3.3"/>
                <power_domain name="USB_OTG2_VDDA_3P3" value="3.3"/>
                <power_domain name="USB_H_VDD_1P2" value="1.2"/>
                <power_domain name="MIPI_VDDA_1P8" value="1.8"/>
+               <power_domain name="NVCC_SD2" value="3.3"/>
                <power_domain name="NVCC_ENET1" value="3.3"/>
+               <power_domain name="NVCC_SPI" value="3.3"/>
+               <power_domain name="NVCC_I2C" value="3.3"/>
                <power_domain name="MIPI_VDDD_1P0" value="1.0"/>
+               <power_domain name="NVCC_UART" value="3.3"/>
+               <power_domain name="NVCC_GPIO1" value="3.3"/>
                <power_domain name="NVCC_DRAM" value="1.35"/>
                <power_domain name="VDD_1P2_CAP" value="1.2"/>
                <power_domain name="VDDA_1P8" value="1.8"/>
@@ -46,6 +54,11 @@
                <power_domain name="DRAM_VREF" value="0.675"/>
                <power_domain name="VDD_TEMPSENSOR_1P8" value="1.8"/>
             </power_domains>
+            <pin_labels>
+               <pin_label pin_num="N1" pin_signal="GPIO1_IO00" label="PMIC_INT"/>
+               <pin_label pin_num="P20" pin_signal="EPDC1_DATA00" label="CSI_POWER_EN"/>
+               <pin_label pin_num="P21" pin_signal="EPDC1_DATA01" label="CSI_LED"/>
+            </pin_labels>
          </pins_profile>
          <functions_list>
             <function name="BOARD_InitPins">
@@ -205,6 +218,9 @@
                   <pin peripheral="uSDHC1" signal="sd_data, 2" pin_num="A4" pin_signal="SD1_DATA2"/>
                   <pin peripheral="uSDHC1" signal="sd_data, 3" pin_num="D5" pin_signal="SD1_DATA3"/>
                   <pin peripheral="uSDHC1" signal="sd_vselect" pin_num="M6" pin_signal="UART3_CTS"/>
+                  <pin peripheral="GPIO1" signal="gpio_io, 00" pin_num="N1" pin_signal="GPIO1_IO00"/>
+                  <pin peripheral="GPIO2" signal="gpio_io, 00" pin_num="P20" pin_signal="EPDC1_DATA00"/>
+                  <pin peripheral="GPIO2" signal="gpio_io, 01" pin_num="P21" pin_signal="EPDC1_DATA01"/>
                </pins>
             </function>
          </functions_list>
