@@ -399,6 +399,10 @@ Variation25=Designator=R42|UniqueId=\NVMOWSRI|Kind=1|AlternatePart=
 Variation26=Designator=R41|UniqueId=\SYBORDGC|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for SBC5\Design Rule Check - SBC5.html
+DItemRevisionGUID=
+
 [SearchPath1]
 Path=..\*.*
 IncludeSubFolders=1
@@ -2338,34 +2342,35 @@ UpdateToLatestRevision=1
 PartTypes=0
 
 [NetInfos]
-Net1=NetName=3V7|NetColor=$006E6EFF
-Net2=NetName=5V0|NetColor=$006E6EFF
-Net3=NetName=CHS_GND|NetColor=$0000BE00
-Net4=NetName=DDR_VREF|NetColor=$006E6EFF
-Net5=NetName=GND|NetColor=$0000BE00
-Net6=NetName=LICELL|NetColor=$006E6EFF
-Net7=NetName=NetC11_2|NetColor=$006E6EFF
-Net8=NetName=NetC153_2|NetColor=$006E6EFF
-Net9=NetName=NetC32_2|NetColor=$006E6EFF
-Net10=NetName=NetC7_2|NetColor=$006E6EFF
-Net11=NetName=NetD6_1|NetColor=$006E6EFF
-Net12=NetName=NetD7_1|NetColor=$006E6EFF
-Net13=NetName=NVCC_3V3|NetColor=$006E6EFF
-Net14=NetName=NVCC_DRAM|NetColor=$006E6EFF
-Net15=NetName=PVCC_ENET_CAP|NetColor=$006E6EFF
-Net16=NetName=PVCC_SAI_SD_CAP|NetColor=$006E6EFF
-Net17=NetName=USB_1_VBUS|NetColor=$006E6EFF
-Net18=NetName=USB_2_VBUS|NetColor=$006E6EFF
-Net19=NetName=VCC_1V8|NetColor=$006E6EFF
-Net20=NetName=VCC_3V3_LP|NetColor=$006E6EFF
-Net21=NetName=VCC_ARM|NetColor=$006E6EFF
-Net22=NetName=VCC_SD|NetColor=$006E6EFF
-Net23=NetName=VCC_SOC|NetColor=$006E6EFF
-Net24=NetName=VDD_CR|NetColor=$006E6EFF
-Net25=NetName=VDD_LPSR|NetColor=$006E6EFF
-Net26=NetName=VDDA_1P8|NetColor=$006E6EFF
-Net27=NetName=VIN|NetColor=$006E6EFF
-Net28=NetName=VSNVS|NetColor=$006E6EFF
+Net1=NetName=3V3|NetColor=$006E6EFF
+Net2=NetName=3V7|NetColor=$006E6EFF
+Net3=NetName=5V0|NetColor=$006E6EFF
+Net4=NetName=CHS_GND|NetColor=$0000BE00
+Net5=NetName=DDR_VREF|NetColor=$006E6EFF
+Net6=NetName=GND|NetColor=$0000BE00
+Net7=NetName=LICELL|NetColor=$006E6EFF
+Net8=NetName=NetC11_2|NetColor=$006E6EFF
+Net9=NetName=NetC153_2|NetColor=$006E6EFF
+Net10=NetName=NetC32_2|NetColor=$006E6EFF
+Net11=NetName=NetC7_2|NetColor=$006E6EFF
+Net12=NetName=NetD6_1|NetColor=$006E6EFF
+Net13=NetName=NetD7_1|NetColor=$006E6EFF
+Net14=NetName=NVCC_3V3|NetColor=$006E6EFF
+Net15=NetName=NVCC_DRAM|NetColor=$006E6EFF
+Net16=NetName=PVCC_ENET_CAP|NetColor=$006E6EFF
+Net17=NetName=PVCC_SAI_SD_CAP|NetColor=$006E6EFF
+Net18=NetName=USB_1_VBUS|NetColor=$006E6EFF
+Net19=NetName=USB_2_VBUS|NetColor=$006E6EFF
+Net20=NetName=VCC_1V8|NetColor=$006E6EFF
+Net21=NetName=VCC_3V3_LP|NetColor=$006E6EFF
+Net22=NetName=VCC_ARM|NetColor=$006E6EFF
+Net23=NetName=VCC_SD|NetColor=$006E6EFF
+Net24=NetName=VCC_SOC|NetColor=$006E6EFF
+Net25=NetName=VDD_CR|NetColor=$006E6EFF
+Net26=NetName=VDD_LPSR|NetColor=$006E6EFF
+Net27=NetName=VDDA_1P8|NetColor=$006E6EFF
+Net28=NetName=VIN|NetColor=$006E6EFF
+Net29=NetName=VSNVS|NetColor=$006E6EFF
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
