@@ -14,3 +14,5 @@ Altium/History/
 *.log
 
 ~$*.xlsx
+
+*.Identifier
